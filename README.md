@@ -26,6 +26,8 @@ I will edit the TriPi-Updater to make sure it warns you if a file will be edited
 
 -None - initial release of TriPi updater as follow up for initial launch of TriPi pre-built images.
 
+-If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course).
+
 -You may run this updater anyways if you modified TriPi-related files in version 4.0 and want to attempt to restore them.
 
 -If you modified files unrelated to TriPi, this will not fix them and you will probably need to find answers elsewhere.
