@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+fi
+
+sudo chmod +x /dev/uinput
+
+xboxdrv --trigger-as-button --wid 0 --led 2 --detach-kernel-driver --quiet --silent & sleep 1
