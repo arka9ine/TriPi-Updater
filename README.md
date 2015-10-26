@@ -1,7 +1,9 @@
 **TriPi Updater**
 
 visit https://tripi.junaos.com to download the bootable image that this updater is for. Burn, Insert, Go!
+
 THE SITE WILL BECOME OPEN TO THE PUBLIC WITH TriPi 4.0 AVAILABLE TO ALL ON 10/28/2015!
+
 Sorry for the delay, folks. Had a few kinks to work out (giggity) and have been having issues with my ISP.
 
 Updater script for those running TriPi 4.0 image or newer.
