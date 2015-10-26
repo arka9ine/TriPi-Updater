@@ -12,24 +12,25 @@ echo "                          |_||_|   |_||_|     |_|  "
 echo
 echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
 
-echo -e "$(tput setaf 2;tput bold)Hi!\n"
+echo -e "$(tput setaf 2)Hi!\n"
 echo -e "This is the TriPi updater script."
 echo
 echo -e "I am going to install updates to your TriPi environment.\n"
 echo "This could potentially break things. If you have any issues, consult https://tripi.junaos.com or submit an issue to github."
 echo "Not all updates are the same, so check the README.md file to find out if this is a stable release!"
+#echo "WARNING!! This Update is replacing filename.file, which means you may need to reconfigure [value] after this is done."
 echo -e "I will begin in 20 seconds...\n\n"
 
 sleep 20
 
 cd /home/pi/TriPi-Updater
 
-echo "$(tput setaf 2;tput bold)Checking xboxdrv... $(tput sgr 0)"
+echo "$(tput setaf 2)Checking xboxdrv... $(tput sgr 0)"
 
 apt-get -y install xboxdrv
 adduser pi root
 
-echo "$(tput setaf 2;tput bold)Checking auto-login and Xbox360 controller navigation..."
+echo "$(tput setaf 2)Installing new TriPi files..."
 rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 
@@ -51,7 +52,7 @@ chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriP
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 
-echo -e "\n$(tput setaf 2;tput bold)Done!\n" 
+echo -e "\n$(tput setaf 2)Done!\n" 
 
 echo "I will reboot your Raspberry Pi in 15 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
 
