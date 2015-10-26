@@ -30,7 +30,8 @@ apt-get -y install xboxdrv
 adduser pi root
 
 echo "$(tput setaf 2;tput bold)Checking auto-login and Xbox360 controller navigation..."
-rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/.bashrc}
+rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
+rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 
 cp config.txt /boot/
 cp inittab /etc/
@@ -38,12 +39,17 @@ cp rc.local /etc/
 cp emu.sh /etc/profile.d/
 cp {TriPi-Updater.sh,kodi.sh} /home/pi/RetroPie/roms/ports
 cp .bashrc /home/pi
+cp splashscreen.list /etc/
+cp asplashscreen /etc/init.d/
+cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
 echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
 chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod a+x /etc/init.d/asplashscreen
+insserv /etc/init.d/asplashscreen
 
 echo -e "\n$(tput setaf 2;tput bold)Done!\n" 
 
