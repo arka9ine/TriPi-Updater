@@ -43,8 +43,7 @@ echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
-chmod +x /home/pi/RetroPie/roms/ports/kodi.sh
-chmod +x /etc/profile.d/emu.sh
+chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 
 echo -e "\n$(tput setaf 2;tput bold)Done!\n" 
 
