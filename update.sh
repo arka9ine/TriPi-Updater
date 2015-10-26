@@ -30,7 +30,7 @@ echo "$(tput setaf 2)Checking xboxdrv... $(tput sgr 0)"
 apt-get -y install xboxdrv
 adduser pi root
 
-echo "$(tput setaf 2)Installing new TriPi files..."
+echo -e \n\n"$(tput setaf 2)Installing new TriPi files..."
 rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 
@@ -44,7 +44,7 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
-echo -e "\nSetting permissions for new files...$(tput sgr 0)"
+echo -e "\n\nSetting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
