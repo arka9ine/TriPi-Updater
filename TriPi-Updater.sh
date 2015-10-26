@@ -4,6 +4,8 @@ sudo killall -9 kodi.bin
 sudo killall emulationstation
 (sleep 1)
 echo
+echo
+echo
 echo "$(tput setaf 2)Checking environment and Updatiing TriPi...$(tput sgr 0)"
 cd
 sudo apt-get -y install git
