@@ -27,8 +27,6 @@ I will edit the TriPi-Updater to make sure it warns you if a file will be edited
 
 **Changes in this release**
 
-10/26/15
-
 -Added splashscreen install files and commands to the repo, so that it can be easily replaced when TriPi goes through a version bump.
 
 -Modified echoed text for the Updater scripts, and fixed a few color-related issues.
