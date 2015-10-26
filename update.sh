@@ -16,9 +16,8 @@ echo -e "$(tput setaf 2;tput bold)Hi!\n"
 echo -e "This is the TriPi updater script."
 echo
 echo -e "I am going to install updates to your TriPi environment.\n"
-echo "This could potentially break things, so you should make sure you read the README.md file on the TriPi github, and that you are capable of recovering"
-echo "from any issues you run into."
-echo "Not all updates are the same, so check the README.md file to find out if it is an alpha, beta, or stable release!"
+echo "This could potentially break things. If you have any issues, consult https://tripi.junaos.com or submit an issue to github."
+echo "Not all updates are the same, so check the README.md file to find out if this is a stable release!"
 echo -e "I will begin in 20 seconds...\n\n"
 
 sleep 20
