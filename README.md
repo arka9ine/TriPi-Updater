@@ -27,9 +27,15 @@ I will edit the TriPi-Updater to make sure it warns you if a file will be edited
 
 **Changes in this release**
 
--None - initial release of TriPi updater as follow up for initial launch of TriPi pre-built images.
+10/26/15
 
--If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course).
+-Added splashscreen install files and commands to the repo, so that it can be easily replaced when TriPi goes through a version bump.
+
+-Modified echoed text for the Updater scripts, and fixed a few color-related issues.
+
+-If you are running the new TriPi 4.0 image, you can use the built-in TriPi updater to grab these quick fixes. They don't have any impact on functionality, but it's good for us all to stay on the same page.
+
+-If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
 
 -You may run this updater anyways if you modified TriPi-related files in version 4.0 and want to attempt to restore them.
 
