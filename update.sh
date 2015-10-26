@@ -23,7 +23,7 @@ echo -e "I will begin in 20 seconds...\n\n"
 
 sleep 20
 
-cd /home/pi/TriPi
+cd /home/pi/TriPi-Updater
 
 echo "$(tput setaf 2;tput bold)Checking xboxdrv... $(tput sgr 0)"
 
