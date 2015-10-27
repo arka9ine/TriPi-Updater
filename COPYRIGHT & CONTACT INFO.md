@@ -1,7 +1,7 @@
 #The TriPi Project 
 Copyright (C) 2015 by..:
 
-Phoenix Aero [pancakeykakes] - Head Author - contact > thephoenixproject89 [at] gmail.com
+Derek shoaf [pancakeykakes] - Head Author - contact > thephoenixproject89 [at] gmail.com
 
 Jason Schwerberg [JSchwerberg] - Supporting Author/Editor
 
