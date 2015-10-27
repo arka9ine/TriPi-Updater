@@ -1,6 +1,6 @@
 **TriPi Updater**
 
-visit https://tripi.junaos.com to download the bootable image that this updater is for. Burn, Insert, Go!
+Visit https://tripi.junaos.com to download the bootable image that this updater is for. Burn, Insert, Go!
 
 THE SITE WILL BECOME OPEN TO THE PUBLIC WITH TriPi 4.0 AVAILABLE TO ALL ON 10/28/2015!
 
