@@ -2,7 +2,7 @@
 
 ### BEGIN INIT INFO
 # Provides:          asplashscreen
-# Required-Start:    mountdevsubfs
+# Required-Start:    
 # Required-Stop:
 # Default-Start:     S
 # X-Start-Before:    checkroot
