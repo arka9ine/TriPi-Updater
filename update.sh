@@ -19,9 +19,9 @@ echo -e "I am going to install updates to your TriPi environment.\n"
 echo "This could potentially break things. If you have any issues, consult https://tripi.junaos.com or submit an issue to github."
 echo "Not all updates are the same, so check the README.md file to find out if this is a stable release!"
 #echo "WARNING!! This Update is replacing filename.file, which means you may need to reconfigure [value] after this is done."
-echo -e "I will begin in 20 seconds...\n\n"
+echo -e "I will begin in 15 seconds...\n\n"
 
-sleep 20
+sleep 15
 
 cd /home/pi/TriPi-Updater
 
@@ -54,9 +54,9 @@ insserv /etc/init.d/asplashscreen
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
-echo "I will reboot your Raspberry Pi in 15 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
+echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
 
-SECONDS_TILL_REBOOT=15
+SECONDS_TILL_REBOOT=10
 
 while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
   sleep 1
