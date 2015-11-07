@@ -48,7 +48,7 @@ echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
-chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/RetroPie/roms/ports/enable\ wireless\ controller\ config.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 
