@@ -6,6 +6,7 @@ echo "This WILL overwrite your current retroarch.cfg file, so if you have made a
 echo
 echo "Copying file...$(tput sgr 0)"
 echo
+sudo rm /opt/retropie/configs/all/retroarch.cfg
 sudo cp retroarch.cfg /opt/retropie/configs/all/
 
 sleep .5
