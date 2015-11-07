@@ -12,7 +12,7 @@ echo
 echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
 echo
 echo
-echo "$(tput setaf 2)Force-enabling wireless controller support for RETROARCH-BASED emulators."
+echo "$(tput setaf 2)Force-enabling wireless controller support for RETROARCH-BASED emulators..."
 echo "This WILL overwrite your current retroarch.cfg file, so if you have made any modifications beyond the stock TriPi settings, you will need to re-configure them."
 echo
 echo "Copying file...$(tput sgr 0)"
