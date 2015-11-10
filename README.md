@@ -23,7 +23,9 @@ I will edit the TriPi-Updater to make sure it warns you if a file will be edited
 
 **Changes in this release**
 
--Initial Release
+-Update 11/09/2015
+
+-Added hotfix for those using a wireless Xbox360 controller and were not able to use it in-game for any retroarch-based emulators. Run the TriPi updater that you should already have in your "Ports" menu, and after the reboot, an option to run the hotfix will show up in the ports menu. You should only have to run this once, unless an update to TriPi is released that states you will need to run it again (very unlikely, but worth mentioning just in case).
 
 -If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
 
