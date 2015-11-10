@@ -43,7 +43,7 @@ Check back later for future releases.
 
 **Release type**
 
-Hotfix - Although the hotfix option will show up for everyone who takes this update, you have to actually RUN the hotfix for it to modify anything. If you're like me and want to have the absolute latest and greatest, you can take thsi update. Though it will only be useful for those who had issues with their wireless controllers.
+Hotfix - Although the hotfix option will show up for everyone who takes this update, you have to actually RUN the hotfix for it to modify anything. If you're like me and want to have the absolute latest and greatest, you can run the TriPi updater so you can grab it. Though if you were not experiencing the above issues, or are not using a wireless controller, DO NOT run the hotfix after updating or you will most likely ruin something.
 
 #
 
