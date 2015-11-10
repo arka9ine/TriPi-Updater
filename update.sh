@@ -38,11 +38,14 @@ cp config.txt /boot/
 cp inittab /etc/
 cp rc.local /etc/
 cp emu.sh /etc/profile.d/
-cp {TriPi-Updater.sh,kodi.sh,enable\ wireless\ controller\ support.sh} /home/pi/RetroPie/roms/ports
+cp {TriPi-Updater.sh,kodi.sh} /home/pi/RetroPie/roms/ports
 cp .bashrc /home/pi
 cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
+
+cd Wireless-Controller-Hotfix
+cp enable\ wireless\ controller\ support.sh /home/pi/RetroPie/roms/ports
 
 echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
