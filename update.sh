@@ -46,13 +46,15 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
-cd Wireless-Controller-Hotfix
-cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/ports
-
 echo "$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
 apt-get install -y minecraft-pi
 sleep .2
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
+
+cd Wireless-Controller-Hotfix
+cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/ports
+
+
 
 echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
