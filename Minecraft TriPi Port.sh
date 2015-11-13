@@ -7,7 +7,7 @@ sudo killall xboxdrv
 
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "xinit \"/opt/retropie/ports/minecraft/Minecraft.sh\"" minecraft
 
-wait minecraft
+wait minecraft-pi
 
 sudo killall xboxdrv
 sleep .2
