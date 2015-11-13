@@ -46,7 +46,7 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
-echo "$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
+echo -e "\n$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
 apt-get install -y minecraft-pi
 sleep .2
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
