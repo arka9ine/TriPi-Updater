@@ -31,8 +31,10 @@ apt-get -y install xboxdrv
 adduser pi root
 
 echo -e "\n$(tput setaf 2)Installing new TriPi files..."
-rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
+rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port/sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
+
+
 
 cp config.txt /boot/
 cp inittab /etc/
@@ -47,11 +49,16 @@ cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cd Wireless-Controller-Hotfix
 cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/ports
 
+echo "$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
+apt-get install -y minecraft-pi
+sleep .2
+cp Minecraft\ TriPi\ Port /home/pi/RetroPie/roms/ports
+
 echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
-chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod +x {/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port,/home/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 
