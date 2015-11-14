@@ -20,17 +20,29 @@ This can include changelog info for that specific update, new features, and/or w
 -Minecraft-Pi is now supported! Your Xbox360 controller should now be compatible with your Minecraft-Pi install that is provided by the RetroPie Devs! If you don't already have it, grab it from the 'experimental packages' section of RetroPie setup!
 
 -Controls are as follows (NOTE THAT WIRELESS CONTROLLERS HAVE NOT BEEN TESTED YET!!!): 
+
 Right Trigger: Smash Block
+
 Left Trigger: Place Block
+
 Right/Left Bumpers: Use to select items assigned in your hotbar
+
 Y Button: Inventory
+
 A button: Jump (double-tap to fly)
+
 B button: Corouch/Decend while in flight
+
 X button: INTENTIONALLY NOT MAPPED. MAY BE USED IN FUTURE BUILDS IF MINECRAFT-PI GETS UPDATED WITH MORE FEATURES
+
 Start: This is your 'enter' key. Use it to make a selection when in inventory or in a menu
+
 Back: This is your 'esc' key. Use it to open the menu or go back.
+
 Left analog stick: Movement
+
 Right analog stick: 'Look' directions/Camera angle adjust. (Use it to look around)
+
 Xbox Guide Button: Press this to quit Minecraft-Pi and return to Emulationstation
 
 
