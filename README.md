@@ -50,7 +50,7 @@ Xbox Guide Button: Press this to quit Minecraft-Pi and return to Emulationstatio
 
 -If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
 
--You may run this updater anyways if you modified TriPi-related files in version 4.0 and want to attempt to restore them.
+-You may run this updater anyways if you modified TriPi-related files and want to attempt to restore them.
 
 -If you modified files unrelated to TriPi, this will not fix them and you will probably need to find answers elsewhere.
 
@@ -62,7 +62,7 @@ Check back later for future releases.
 
 **Release type**
 
-Hotfix - Although the hotfix option will show up for everyone who takes this update, you have to actually RUN the hotfix for it to modify anything. If you're like me and want to have the absolute latest and greatest, you can run the TriPi updater so you can grab it. Though if you were not experiencing the above issues, or are not using a wireless controller, DO NOT run the hotfix after updating or you will most likely ruin something.
+Feature Release - Although this release has been tested on wired controllers with promising results, I am unable to confirm wireless controller support at this time. 
 
 #
 
