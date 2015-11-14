@@ -2,7 +2,7 @@
 sudo killall -9 retroarch
 sudo killall -9 kodi.bin
 sudo killall emulationstation
-(sleep 1)
+sleep 1
 echo
 echo
 echo
