@@ -45,7 +45,7 @@ cp .bashrc /home/pi
 cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
-cp killmc.sh /home/pi
+cp killmc.sh /home/pi/
 
 echo -e "\n$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
 apt-get install -y minecraft-pi
