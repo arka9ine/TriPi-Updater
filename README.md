@@ -9,25 +9,30 @@ This can include changelog info for that specific update, new features, and/or w
 
 #
 
-Some of the files that are included when running the TriPi-Updater won't actually be installed during the update.
-
-They are included as part of the souce code package in case anyone needs to manually revert them. However, I will not have them be auto-installed unless I have made modifications to them that warrant it. 
-
-This is because installing them unnecessarily will revert some settings you may have modified (like retroarch.cfg keybinds) back to TriPi defaults.
-
-I will edit the TriPi-Updater to make sure it warns you if a file will be edited or replaced in such a way that may require you to reconfigure something.
-
-#
-
-#
-
 **Changes in this release**
 
--Update 11/09/2015
+-Update 11/14/2015
 
--Added hotfix for those using a wireless Xbox360 controller and were not able to use it in-game for any retroarch-based emulators. 
+-This update brings TriPi to version 4.1
 
-Run the TriPi updater that you should already have in your "Ports" menu. After the reboot, an option to run the hotfix will show up in the ports menu. You should only have to run this once, unless an update to TriPi is released that states you will need to run it again (very unlikely, but worth mentioning just in case).
+-Updated Splashscreen
+
+-Minecraft-Pi is now supported! Your Xbox360 controller should now be compatible with your Minecraft-Pi install that is provided by the RetroPie Devs! If you don't already have it, grab it from the 'experimental packages' section of RetroPie setup!
+
+-Controls are as follows (NOTE THAT WIRELESS CONTROLLERS HAVE NOT BEEN TESTED YET!!!): 
+Right Trigger: Smash Block
+Left Trigger: Place Block
+Right/Left Bumpers: Use to select items assigned in your hotbar
+Y Button: Inventory
+A button: Jump (double-tap to fly)
+B button: Corouch/Decend while in flight
+X button: INTENTIONALLY NOT MAPPED. MAY BE USED IN FUTURE BUILDS IF MINECRAFT-PI GETS UPDATED WITH MORE FEATURES
+Start: This is your 'enter' key. Use it to make a selection when in inventory or in a menu
+Back: This is your 'esc' key. Use it to open the menu or go back.
+Left analog stick: Movement
+Right analog stick: 'Look' directions/Camera angle adjust. (Use it to look around)
+Xbox Guide Button: Press this to quit Minecraft-Pi and return to Emulationstation
+
 
 -If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
 
