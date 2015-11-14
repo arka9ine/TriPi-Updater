@@ -39,9 +39,11 @@ Start: This is your 'enter' key. Use it to make a selection when in inventory or
 
 Back: This is your 'esc' key. Use it to open the menu or go back.
 
+D-Pad Up/Down: Highlight menu items for selection
+
 Left analog stick: Movement
 
-Right analog stick: 'Look' directions/Camera angle adjust. (Use it to look around)
+Right analog stick: 'Look' directions/Camera angle adjust. (Use it to look around). Also controls the mouse pointer, but is not quite fine-tuned yet.
 
 Xbox Guide Button: Press this to quit Minecraft-Pi and return to Emulationstation
 
