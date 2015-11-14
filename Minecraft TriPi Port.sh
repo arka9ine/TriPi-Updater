@@ -2,7 +2,10 @@
 
 sudo killall xboxdrv
         sleep .2
-        xboxdrv --detach-kernel-driver --wid 0 --led 4 --mimic-xpad --trigger-as-zaxis --autofire LT=75 --autofire RT=75 --autofire DD=150 --autofire DU=150 --autofire DL=150 --autofire DR=150 --axismap "-y2=y2,-trigger=trigger" --ui-axismap "x1=REL_X:15:20,y1=REL_Y:15:20,y2=REL_WHEEL:5:100,x2=REL_HWHEEL:5:100,trigger=REL_WHEEL:5:100" --ui-buttonmap LT=BTN_LEFT --ui-buttonmap RT=BTN_RIGHT--ui-buttonmap DD=KEY_S --ui-buttonmap DU=KEY_W --ui-buttonmap DL=KEY_A --ui-buttonmap DR=KEY_D --ui-buttonmap A=KEY_SPACE --ui-buttonmap B=KEY_TAB --ui-buttonmap X=KEY_E --ui-buttonmap START=KEY_ESC --ui-buttonmap RB=KEY_2 --ui-buttonmap LB=KEY_1 --quiet --silent & sleep 1
+        xboxdrv \
+         --ui-axismap x2=REL_X:10,y2=REL_Y:10,x1=KEY_LEFT:KEY_RIGHT,y1=KEY_UP:KEY_DOWN,x1=KEY_A:KEY_D,y1=KEY_W:KEY_S \
+         --ui-buttonmap RT=BTN_RIGHT,LT=BTN_LEFT,x=KEY_E \
+         --ui-buttonmap A=KEY_SPACE --ui-buttonmap B=KEY_LEFTSHIFT --ui-buttonmap X=KEY_E --ui-buttonmap BACK=KEY_ESC --ui-buttonmap START=KEY_ENTER --ui-buttonmap DD=REL_WHEEL:1:150 --ui-buttonmap DU=REL_WHEEL:-1:150 --trigger-as-button --deadzone 4000 --wid 0 --led 4 --quiet --silent & sleep 1
         sleep .2
 
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "xinit \"/opt/retropie/ports/minecraft/Minecraft.sh\"" minecraft
