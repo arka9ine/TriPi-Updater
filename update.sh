@@ -47,8 +47,7 @@ cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
 
-echo -e "\n$(tput setaf 2)Checking Minecraft-Pi install and porting to TriPi... $(tput sgr 0)"
-apt-get install -y minecraft-pi
+echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
 
