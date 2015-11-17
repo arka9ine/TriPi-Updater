@@ -18,7 +18,7 @@ echo
 echo "Copying file...$(tput sgr 0)"
 echo
 sudo rm /opt/retropie/configs/all/retroarch.cfg
-sudo cp /home/pi/TriPi-Updater/retroarch.cfg /opt/retropie/configs/all/
+sudo cp /home/pi/TriPi-Updater/Wireless-Controller-Hotfix/retroarch.cfg /opt/retropie/configs/all/
 
 sleep .5
 
