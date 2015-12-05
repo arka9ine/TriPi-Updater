@@ -49,7 +49,9 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
-cp {TriPi-Updater.sh,wireless\ controller\ hotfix.sh} /home/pi/RetroPie/roms/TriPi
+cp TriPi-Updater.sh /home/pi/RetroPie/roms/TriPi
+cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
+cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
@@ -57,12 +59,6 @@ cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
 
 cd Wireless-Controller-Hotfix
 cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/TriPi
-
-
-
-cp {/home/pi/TriPi-Updater/TriPi-Menu/theme.xml,/home/pi/TriPi-Updater/TriPi-Menu/art} /etc/emulationstation/themes/simple-dark/TriPi
-
-
 
 echo -e "\nSetting permissions for new files...$(tput sgr 0)"
 
