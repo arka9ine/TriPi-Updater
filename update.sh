@@ -30,17 +30,20 @@ echo "$(tput setaf 2)Checking xboxdrv... $(tput sgr 0)"
 apt-get -y install xboxdrv
 adduser pi root
 
-echo -e "\n$(tput setaf 2)Installing new TriPi files..."
+echo -e "\n$(tput setaf 2)Removing old files and creating required directories. Don't be alarmed if you see cannot stat errors...$(tput sgr 0)"
 rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
+rm -rf /home/pi/RetroPie/roms/TriPi
+rm -rf /etc/emulationstation/themes/simple-dark/TriPi
 
-
+mkdir /home/pi/RetroPie/roms/TriPi
+mkdir /etc/emulationstation/themes/simple-dark/TriPi
 
 cp config.txt /boot/
 cp inittab /etc/
 cp rc.local /etc/
 cp emu.sh /etc/profile.d/
-cp {TriPi-Updater.sh,kodi.sh,} /home/pi/RetroPie/roms/ports
+cp kodi.sh /home/pi/RetroPie/roms/ports
 cp .bashrc /home/pi
 cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
@@ -52,7 +55,11 @@ sleep .2
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
 
 cd Wireless-Controller-Hotfix
-cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/ports
+cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/TriPi
+
+
+
+cp {/home/pi/TriPi-Updater/TriPi-Menu/theme.xml,/home/pi/TriPi-Updater/TriPi-Menu/art} /etc/emulationstation/themes/simple-dark/TriPi
 
 
 
