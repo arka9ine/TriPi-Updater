@@ -60,7 +60,7 @@ cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
 cd Wireless-Controller-Hotfix
 cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/TriPi
 
-echo -e "\nSetting permissions for new files...$(tput sgr 0)"
+echo -e "\n$(tput setaf 2)Setting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
