@@ -11,41 +11,16 @@ This can include changelog info for that specific update, new features, and/or w
 
 **Changes in this release**
 
--Update 11/14/2015
+-Update 12/05/2015
 
--This update brings TriPi to version 4.1
+-This update brings TriPi to version 4.2
 
 -Updated Splashscreen
 
--Minecraft-Pi is now supported! Your Xbox360 controller should now be compatible with your Minecraft-Pi install that is provided by the RetroPie Devs! If you don't already have it, grab it from the 'experimental packages' section of RetroPie setup!
+-Added new menu entry to the main Emulationstation screen called "TriPi". This new menu will house all the TriPi management options such as the updater script, the Wireless controller hotfix script, and any future options I decide to add.
 
--Controls are as follows (NOTE THAT WIRELESS CONTROLLERS HAVE NOT BEEN TESTED YET!!!): 
+-The Kodi and Minecraft ports are still housed in the "Ports" menu.
 
-Right Trigger: Smash Block
-
-Left Trigger: Place Block
-
-Right/Left Bumpers: Use to select items assigned in your hotbar
-
-Y Button: Inventory
-
-A button: Jump (double-tap to fly)
-
-B button: Corouch/Decend while in flight
-
-X button: INTENTIONALLY NOT MAPPED. MAY BE USED IN FUTURE BUILDS IF MINECRAFT-PI GETS UPDATED WITH MORE FEATURES
-
-Start: This is your 'enter' key. Use it to make a selection when in inventory or in a menu
-
-Back: This is your 'esc' key. Use it to open the menu or go back.
-
-D-Pad Up/Down: Highlight menu items for selection
-
-Left analog stick: Movement
-
-Right analog stick: 'Look' directions/Camera angle adjust. (Use it to look around). Also controls the mouse pointer, but is not quite fine-tuned yet.
-
-Xbox Guide Button: Press this to quit Minecraft-Pi and return to Emulationstation
 
 
 -If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
@@ -62,7 +37,9 @@ Check back later for future releases.
 
 **Release type**
 
-Feature Release - Although this release has been tested on wired controllers with promising results, I am unable to confirm wireless controller support at this time. 
+GUI update/Code cleanup release - Stable. 
+
+This update should not directly impact any functionality, as it is mainly focused on cleaning up the Emulationstation/TriPi GUI.
 
 #
 
