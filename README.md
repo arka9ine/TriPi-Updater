@@ -20,10 +20,10 @@ This can include changelog info for that specific update, new features, and/or w
 -Added new menu entry to the main Emulationstation screen called "TriPi". This new menu will house all the TriPi management options such as the updater script, the Wireless controller hotfix script, and any future options I decide to add.
 
 -The Kodi and Minecraft ports are still housed in the "Ports" menu.
+(Please note that the "Minecraft TriPi Port" option is just a launcher script which will bind the controller for use within the game. You need to manually install the Minecraft-Pi port as provided in the RetroPie-Setup menu. Thank the RetroPie and Minecraft-Pi devs for the port. I just made it playable with a controller. :P)
 
 
-
--If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "Ports" in ES.
+-If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "TriPi" in EmulationStation.
 
 -You may run this updater anyways if you modified TriPi-related files and want to attempt to restore them.
 
