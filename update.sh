@@ -35,6 +35,7 @@ rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/k
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 rm -rf /home/pi/RetroPie/roms/TriPi
 rm -rf /etc/emulationstation/themes/simple-dark/TriPi
+rm /etc/emulationstation/es_systems.cfg
 
 mkdir /home/pi/RetroPie/roms/TriPi
 mkdir /etc/emulationstation/themes/simple-dark/TriPi
@@ -52,6 +53,7 @@ cp killmc.sh /home/pi/
 cp TriPi-Updater.sh /home/pi/RetroPie/roms/TriPi
 cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
 cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
+cp es_systems.cfg /etc/emulationstation
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
@@ -67,6 +69,7 @@ sleep 1
 chmod +x {/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/TriPi-Updater.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
+chmod +x /etc/emulatinostation/es_systems.cfg
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
