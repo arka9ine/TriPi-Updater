@@ -69,7 +69,7 @@ sleep 1
 chmod +x {/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/TriPi-Updater.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
-chmod +x /etc/emulatinostation/es_systems.cfg
+chmod +x /etc/emulationstation/es_systems.cfg
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
