@@ -31,7 +31,7 @@ apt-get -y install xboxdrv
 adduser pi root
 
 echo -e "\n$(tput setaf 2)Removing old files and creating required directories. Don't be alarmed if you see cannot stat errors...$(tput sgr 0)"
-rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/homt/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
+rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/homt/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 rm -rf /home/pi/RetroPie/roms/TriPi
 rm -rf /etc/emulationstation/themes/simple-dark/TriPi
@@ -51,6 +51,7 @@ cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
 cp TriPi-Updater.sh /home/pi/RetroPie/roms/TriPi
+cp /home/pi/TriPi-Updater/LCD-TV-Fix/Retroarch\ LCD\ Fix.sh /home/pi/RetroPie/roms/TriPi/
 cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
 cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 cp es_systems.cfg /etc/emulationstation
