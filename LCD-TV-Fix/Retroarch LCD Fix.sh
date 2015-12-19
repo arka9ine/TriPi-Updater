@@ -33,3 +33,5 @@ while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
     echo "${SECONDS_TILL_REBOOT} seconds until reboot"
   fi
 done
+
+reboot
