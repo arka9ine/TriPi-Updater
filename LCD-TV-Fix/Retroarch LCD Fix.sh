@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
 echo "$(tput setaf 2)                        _______     _  _____   _"
 echo "                       |__   __|   (_)|  __ \ (_)  "
@@ -34,4 +34,4 @@ while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
   fi
 done
 
-reboot
+sudo reboot
