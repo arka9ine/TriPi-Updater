@@ -71,6 +71,7 @@ chmod +x {/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/Retro
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 chmod +x /etc/emulationstation/es_systems.cfg
+chmod +x /home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
