@@ -38,9 +38,9 @@ Check back later for future releases.
 
 **Release type**
 
-Feature addition - Stable. 
+Feature addition - Stable - Extra work may be needed. 
 
-This update should not directly impact any functionality, as it is mainly focused on cleaning up the Emulationstation/TriPi GUI.
+The update itself just adds a new script to the TriPi menu, and is therefore virtually risk-free. However, running the script itself may result in you needing to mess around with which individual emulators you want to use, as the performance of said emulators may decrease when the 120Hz LCD fix is applied.
 
 #
 
