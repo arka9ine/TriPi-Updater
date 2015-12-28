@@ -14,10 +14,9 @@ echo -e "$(tput setaf 2)Hi!\n"
 echo -e "Setting Kodi as default home environment...$(tput sgr 0)"
 
 sudo rm /etc/profile.d/emu.sh
-sudo rm /etc/rc.local
 
 sudo cp /home/pi/TriPi-Updater/Kodi-Home/Kodi.sh /etc/profile.d
-sudo cp /home/pi/TriPi-Updater/Kodi-Home/rc.local /etc/
+
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
