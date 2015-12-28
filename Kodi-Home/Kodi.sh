@@ -2,7 +2,7 @@ while pgrep omxplayer &>/dev/null;
     do sleep 1;
 done
 
-[ "`tty`" = "/dev/tty1" ] && /opt/retropie/supplementary/runcommand/runcommand.sh 0 "startkodi" 
+[ "`tty`" = "/dev/tty1" ] && startkodi 
 
 sudo chmod +x /dev/uinput
 
