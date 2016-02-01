@@ -18,10 +18,11 @@ echo
 echo -e "I am going to install updates to your TriPi environment.\n"
 echo "This could potentially break things. If you have any issues, consult https://tripi.junaos.com or submit an issue to github."
 echo "Not all updates are the same, so check the README.md file to find out if this is a stable release!"
-#echo "WARNING!! This Update is replacing filename.file, which means you may need to reconfigure [value] after this is done."
-echo -e "I will begin in 15 seconds...\n\n"
+echo
+echo "!!!!WARNING!!!! This Update is replacing RETROARCH.CFG, which means you may need to reconfigure any custom settings after this is done!"
+echo -e "I will begin in 20 seconds...\n\n"
 
-sleep 15
+sleep 20
 
 cd /home/pi/TriPi-Updater
 
@@ -36,6 +37,9 @@ rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 rm -rf /home/pi/RetroPie/roms/TriPi
 rm -rf /etc/emulationstation/themes/simple-dark/TriPi
 rm /etc/emulationstation/es_systems.cfg
+rm /home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh
+rm /home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh
+rm /opt/retropie/configs/all/retroarch.cfg
 
 mkdir /home/pi/RetroPie/roms/TriPi
 mkdir /etc/emulationstation/themes/simple-dark/TriPi
@@ -51,17 +55,14 @@ cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
 cp TriPi-Updater.sh /home/pi/RetroPie/roms/TriPi
-cp /home/pi/TriPi-Updater/LCD-TV-Fix/Retroarch\ LCD\ Fix.sh /home/pi/RetroPie/roms/TriPi/
 cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
 cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 cp es_systems.cfg /etc/emulationstation
+cp retroarch.cfg /opt/retropie/configs/all/
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
-
-cd Wireless-Controller-Hotfix
-cp wireless\ controller\ hotfix.sh /home/pi/RetroPie/roms/TriPi
 
 echo -e "\n$(tput setaf 2)Setting permissions for new files...$(tput sgr 0)"
 
@@ -71,7 +72,6 @@ chmod +x {/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/Retro
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 chmod +x /etc/emulationstation/es_systems.cfg
-chmod +x /home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
