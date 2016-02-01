@@ -11,17 +11,18 @@ This can include changelog info for that specific update, new features, and/or w
 
 **Changes in this release**
 
--Update 12/19/2015
+-Update 2/1/2016
+
+-I HAVE A PC AGAIN!
+
+Sorry for the radio silence, I did not have a PC to use for a while now. If you have feature requests or bugs, feel free to report/suggest them here on the github!
 
 -This update brings TriPi to version 4.2 and does not warrant a further version change.
 
--Added Retroarch LCD Fix to the TriPi menu. You must run the fix in order to apply it.
+-The 120Hz LCD Fix is not stable enough to keep in circulation, so it is being removed.
 
--This LCD fix is for those trrying to use Retroarch-based emulators on a 120Hz LCD TV screen and are experiencing input lag issues. It is a replacement retroarch.cfg file that should minimize this input lag. 
+-Xbox360 wired AND wireless controllers /should/ be supported by default now. Even when the support was only available via the hotfix, some people had success with it, others did not. In any scenario, these configurations did not remove or disable wired controller support, so it is easier for me to work on one standard cfg file as opposed to testing against two. As a result, the "Xbox360 Controller Hotfix" file will be removed, and the retroarch.cfg file that was being used before will be the new default cfg file being used across all Retroarch-based emulators, with the volume kicked to the default "0" instead of "-20".
 
-HOWEVER. This fix will make some emulators perform poorly and drop in FPS. Use your pre-launch options to choose a new emulator that performs better. If you would rather deal with the input lag, or use a 60Hz monitor, then you don't need to apply the fix.
-
--There is not an option added for reverting back to 60Hz monitors. If you feel that you will be needing to switch back-and-forth regularly, you may want to research a better alternative. This option is more for those who use the 120Hz LCD TV's regularly.
 
 
 -If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "TriPi" in EmulationStation.
@@ -38,10 +39,8 @@ Check back later for future releases.
 
 **Release type**
 
-Feature addition - Stable - Extra work may be needed. 
-
-The update itself just adds a new script to the TriPi menu, and is therefore virtually risk-free. However, running the script itself may result in you needing to mess around with which individual emulators you want to use, as the performance of said emulators may decrease when the 120Hz LCD fix is applied.
-
+Feature addition - Stable -
+IF YOU MADE SPECIFIC CHANGES TO YOUR RETROARCH.CFG FILE, YOU WILL NEED TO RECONFIGURE THEM AFTER THIS UPDATE!
 #
 
 #
