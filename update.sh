@@ -19,7 +19,7 @@ echo -e "I am going to install updates to your TriPi environment.\n"
 echo "This could potentially break things. If you have any issues, consult https://tripi.junaos.com or submit an issue to github."
 echo "Not all updates are the same, so check the README.md file to find out if this is a stable release!"
 echo
-echo "!!!!WARNING!!!! This Update is replacing RETROARCH.CFG, which means you may need to reconfigure any custom settings after this is done!"
+echo "!!!!WARNING!!!! This Update is replacing RETROARCH.CFG and SMB.CONF, which means you may need to reconfigure any custom settings after this is done!"
 echo -e "I will begin in 20 seconds...\n\n"
 
 sleep 20
@@ -40,6 +40,7 @@ rm /etc/emulationstation/es_systems.cfg
 rm /home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh
 rm /home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh
 rm /opt/retropie/configs/all/retroarch.cfg
+rm /etc/samba/smb.conf
 
 mkdir /home/pi/RetroPie/roms/TriPi
 mkdir /etc/emulationstation/themes/simple-dark/TriPi
@@ -59,6 +60,7 @@ cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simp
 cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 cp es_systems.cfg /etc/emulationstation
 cp retroarch.cfg /opt/retropie/configs/all/
+cp smb.conf /etc/samba/
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
