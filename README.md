@@ -37,7 +37,6 @@ Check back later for future releases.
 **Release type**
 
 Feature addition - Stable -
-IF YOU MADE SPECIFIC CHANGES TO YOUR RETROARCH.CFG FILE, YOU WILL NEED TO RECONFIGURE THEM AFTER THIS UPDATE!
 #
 
 #
