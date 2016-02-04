@@ -27,6 +27,7 @@ echo "/home/pi/RetroPie/roms/TriPi-Updater.sh" > /tmp/TriPiUpdate
 sudo mv /tmp/TriPiUpdate /etc/cron.daily/TriPiUpdate
 sudo chmod a+x /etc/cron.daily/TriPiUpdate
 
+echo
 echo "$(tput setaf 2)If you didn't see an error, auto updates are enabled!"
 echo
 echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
