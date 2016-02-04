@@ -23,8 +23,9 @@ echo
 echo "Starting in 20 seconds...$(tput sgr 0)"
 sleep 20
 
-sudo echo "/home/pi/RetroPie/roms/TriPi-Updater.sh" > /etc/cron.daily/TriPiUpdate
-sudo chmod a+x /etc/cron.daily TriPiUpdate
+echo "/home/pi/RetroPie/roms/TriPi-Updater.sh" > /tmp/TriPiUpdate
+sudo mv /tmp/TriPiUpdate /etc/cron.daily/TriPiUpdate
+sudo chmod a+x /etc/cron.daily/TriPiUpdate
 
 echo "$(tput setaf 2)If you didn't see an error, auto updates are enabled!"
 echo
