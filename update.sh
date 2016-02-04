@@ -55,7 +55,7 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
-cp TriPi-Updater.sh /home/pi/RetroPie/roms/TriPi
+cp Manual\ Update.sh /home/pi/RetroPie/roms/TriPi
 cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
 cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 cp es_systems.cfg /etc/emulationstation
@@ -72,7 +72,7 @@ echo -e "\n$(tput setaf 2)Setting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
-chmod +x {/home/pi/RetroPie/roms/TriPi/Disable\ Auto-Update.sh,/home/pi/RetroPie/roms/TriPi/Enable\ Auto-Update.sh,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod +x {/home/pi/RetroPie/roms/TriPi/Disable\ Auto-Update.sh,/home/pi/RetroPie/roms/TriPi/Enable\ Auto-Update.sh,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/Manual\ Update.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 chmod +x /etc/emulationstation/es_systems.cfg
