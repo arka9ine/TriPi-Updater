@@ -24,4 +24,4 @@ while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
   fi
 done
 
-reboot
+sudo reboot
