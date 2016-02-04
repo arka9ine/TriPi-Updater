@@ -61,6 +61,7 @@ cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-
 cp es_systems.cfg /etc/emulationstation
 cp retroarch.cfg /opt/retropie/configs/all/
 cp smb.conf /etc/samba/
+cp Enable\ Auto-Update.sh /home/pi/RetroPie/roms/TriPi
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
@@ -70,7 +71,7 @@ echo -e "\n$(tput setaf 2)Setting permissions for new files...$(tput sgr 0)"
 
 sleep 1
 
-chmod +x {/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod +x {/home/pi/RetroPie/roms/TriPi/Enable\ Auto-Update.sh,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/TriPi-Updater.sh,/etc/profile.d/emu.sh,/etc/rc.local}
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 chmod +x /etc/emulationstation/es_systems.cfg
