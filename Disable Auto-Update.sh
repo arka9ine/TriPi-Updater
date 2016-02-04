@@ -16,8 +16,8 @@ echo "$(tput setaf 2)This will disable auto-updating of TriPi every night at mid
 echo
 echo "You can always re-enable this if you change your mind."
 echo
-echo "Starting in 20 seconds...$(tput sgr 0)"
-sleep 20
+echo "Starting in 10 seconds...$(tput sgr 0)"
+sleep 10
 
 sudo rm /etc/cron.daily/TriPiUpdate
 
