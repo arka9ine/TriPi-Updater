@@ -48,3 +48,5 @@ sleep 1
 sudo make install
 sleep 1
 cd ~
+
+sudo reboot
