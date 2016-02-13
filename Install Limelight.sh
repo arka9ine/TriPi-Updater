@@ -24,6 +24,9 @@ sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get 
 echo
 echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
 
+sudo rm -rf /home/pi/limelight
+sudo rm -rf /home/pi/RetroPie/roms/limelight
+sleep 1
 sudo mkdir /home/pi/limelight
 sudo mkdir /home/pi/RetroPie/roms/limelight
 
