@@ -1,21 +1,35 @@
 #!/bin/bash
 
-#install needed software from apt
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+
 
 read -p "Press anykey to start Java8 install, input sudo credentials if asked `echo $'\n> '`" -n1 -s
 
 sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
-#create folders for install
+echo
+echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
 
 mkdir /home/pi/limelight
 mkdir /home/pi/RetroPie/roms/limelight
 
-#install reconfigure script to emulation station
+echo
+echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
 
 cp limelightconfig.sh /home/pi/RetroPie/roms/limelight/ 
 
-#download limelight
+echo
+echo "$(tput setaf 2)Downloading Limelight...$(tput sgr 0)"
 
 cd /home/pi/limelight
 
@@ -25,7 +39,8 @@ wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/lim
 
 clear
 
-echo -e "\nDiscovering GeForce PC:s, when found you can press ctrl+c to stop the search, or it will take a long time \n"
+echo
+echo -e "Discovering GeForce PC:s, when found you can press ctrl+c to stop the search, or it will take a long time..."
 
 #discover IP-addresses of Geforce pc:s
 
@@ -33,11 +48,8 @@ java -jar limelight.jar discover
 
 echo -e "\n"
 
-#ask user for IP-number input for pairing
 
 read -p "Input ip-address given above (if no IP is shown, press CTRL+C and check host connection) :`echo $'\n> '`" ip
-
-#pair pi with geforce experience
 
 java -jar limelight.jar pair $ip
 
@@ -47,11 +59,8 @@ read -p "Please ensure that your gamepad is connected to the PI for device selec
 
 clear
 
-#print eventID-numbers and device names with lsinput
-
 lsinput|grep -e dev.input.event -e name
 
-#ask user for eventID number for keymapping
 
 echo -e "\nInput device event ID-number that corresponds with your gamepad from above for keymapping \n"
 read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
@@ -95,4 +104,18 @@ chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
 chmod +x limelightconfig.sh
 
-echo -e "\nEverything done! Now reboot the Pi and you are all set \n"
+echo -e "\n$(tput setaf 2)Done!\n" 
+
+echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
+
+SECONDS_TILL_REBOOT=10
+
+while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
+  sleep 1
+  SECONDS_TILL_REBOOT=$[${SECONDS_TILL_REBOOT} -1]
+  if [[ $((${SECONDS_TILL_REBOOT} % 5)) -eq 0 ]]; then
+    echo "${SECONDS_TILL_REBOOT} seconds until reboot"
+  fi
+done
+
+reboot
