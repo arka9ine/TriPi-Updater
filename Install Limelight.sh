@@ -20,8 +20,8 @@ sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get 
 echo
 echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
 
-mkdir /home/pi/limelight
-mkdir /home/pi/RetroPie/roms/limelight
+sudo mkdir /home/pi/limelight
+sudo mkdir /home/pi/RetroPie/roms/limelight
 
 echo
 echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
