@@ -11,6 +11,8 @@ This can include changelog info for that specific update, new features, and/or w
 
 **Changes in this release**
 
+Update 2/12/16
+
 -Updated moonlight script in hopes that the directory issues are resolved (FINGERS CROSSED!)
 
 -For those interested in using Limelight instead, there will be an install script for Limelight in your TriPi menu!
