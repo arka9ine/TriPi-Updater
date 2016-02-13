@@ -19,12 +19,13 @@ echo
 echo
 echo "$(tput setaf 2)Installing java8...$(tput sgr 0)"
 
-sleep 5
+sleep 2
 
 sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
-echo
+clear
 echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
+sleep 2
 
 sudo rm -rf /home/pi/limelight
 sudo rm -rf /home/pi/RetroPie/roms/limelight
@@ -33,18 +34,14 @@ sudo mkdir /home/pi/limelight
 sudo mkdir /home/pi/RetroPie/roms/limelight
 
 clear
-sleep 2
-
-echo
 echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
+sleep 2
 
 sudo cp /home/pi/TriPi-Updater/Configure\ Limelight.sh /home/pi/RetroPie/roms/limelight/ 
 
 clear 
-sleep 2
-
-echo
 echo "$(tput setaf 2)Downloading Limelight...$(tput sgr 0)"
+sleep 2
 
 cd /home/pi/limelight
 
@@ -53,9 +50,9 @@ sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.
 sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
 
 clear
+echo "$(tput setaf 2)Installing limelight menu to Emulation Station...$(tput sgr 0)"
 sleep 2
 
-echo "$(tput setaf 2)Installing limelight menu to Emulation Station...$(tput sgr 0)"
 sudo sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 
 sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight
@@ -77,9 +74,8 @@ sudo cp limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/ar
 sudo cp limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
 
 clear
-sleep 2
-
 echo "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
+sleep 2
 
 cd /home/pi/
 
@@ -92,15 +88,16 @@ sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps
 sudo echo "#!/bin/bash" > limelight1080p60fps.sh
 sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
-sudo mv limelight720p60fps.sh /home/pi/RetroPie/roms/
-sudo mv limelight1080p30fps.sh /home/pi/RetroPie/roms/
-sudo mv limelight1080p60fps.sh /home/pi/RetroPie/roms/
+sudo mv limelight720p60fps.sh /home/pi/RetroPie/roms/limelight/
+sudo mv limelight1080p30fps.sh /home/pi/RetroPie/roms/limelight/
+sudo mv limelight1080p60fps.sh /home/pi/RetroPie/roms/limelight/
 
-sudo chmod +x /home/pi/RetroPie/roms/limelight720p60fps.sh
-sudo chmod +x /home/pi/RetroPie/roms/limelight1080p30fps.sh
-sudo chmod +x /home/pi/RetroPie/roms/limelight1080p60fps.sh
-sudo chmod +x /home/pi/RetroPie/roms/Configure\ Limelight.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight/limelight720p60fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight/limelight1080p30fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight/limelight1080p60fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight/Configure\ Limelight.sh
 
+clear
 echo -e "\n$(tput setaf 2)Done!\n" 
 
 echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
