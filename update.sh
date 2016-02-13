@@ -54,7 +54,7 @@ echo "                          |_||_|   |_||_|     |_|  "
 echo
 echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
 echo
-echo -e "\n$(tput setaf 2)Removing old files and creating required directories. Don't be alarmed if you see cannot stat errors...$(tput sgr 0)"
+echo -e "\n$(tput setaf 2)Removing old files and creating required directories...$(tput sgr 0)"
 sleep 2
 
 rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/homt/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
