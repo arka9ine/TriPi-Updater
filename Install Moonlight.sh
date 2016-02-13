@@ -46,6 +46,10 @@ cd
 
 echo "$(tput setaf 2)Building and installing Moonlight...$(tput sgr 0)"
 sleep 5
+mkdir /home/pi/Moonlight
+sleep 1
+cd /home/pi/Moonlight
+sleep 1
 wget https://github.com/irtimmer/moonlight-embedded/releases/download/v2.1.2/moonlight-embedded-2.1.2.tar.xz
 sleep 1
 tar xf moonlight-embedded-2.1.2.tar.xz
@@ -63,7 +67,18 @@ sleep 1
 sudo make install
 sleep 1
 
-echo "$(tput setaf 2)Done! Rebooting...$(tput sgr 0)"
-sleep 5
+echo -e "\n$(tput setaf 2)Done!\n" 
+
+echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
+
+SECONDS_TILL_REBOOT=10
+
+while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
+  sleep 1
+  SECONDS_TILL_REBOOT=$[${SECONDS_TILL_REBOOT} -1]
+  if [[ $((${SECONDS_TILL_REBOOT} % 5)) -eq 0 ]]; then
+    echo "${SECONDS_TILL_REBOOT} seconds until reboot"
+  fi
+done
 
 sudo reboot
