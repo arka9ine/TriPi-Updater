@@ -7,6 +7,13 @@ Jason Schwerberg [JSchwerberg] - Supporting Author/Editor
 
 Justin Bail - Head alpha/beta tester
 
+Special Thanks:
+
+The RetroPie devs
+
+The Kodi Devs
+
+stsfin - For the Limelight install script!
 
 Contact thephoenixproject89@gmail.com if you have contributed to this project and wish to be named here,
 as you deserve to be on this list.
