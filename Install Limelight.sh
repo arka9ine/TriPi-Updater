@@ -10,7 +10,7 @@ echo "                          | || '__|| ||  ___/ | |  "
 echo "                          | || |   | || |     | |  "
 echo "                          |_||_|   |_||_|     |_|  "
 echo
-echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n$(tput sgr 0)"
 
 
 read -p "Press anykey to start Java8 install, input sudo credentials if asked `echo $'\n> '`" -n1 -s
