@@ -1,9 +1,6 @@
 #!/bin/bash
 
 clear
-
-echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
 echo "$(tput setaf 2)                        _______     _  _____   _"
 echo "                       |__   __|   (_)|  __ \ (_)  "
@@ -13,9 +10,6 @@ echo "                          | || |   | || |     | |  "
 echo "                          |_||_|   |_||_|     |_|  "
 echo
 echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n$(tput sgr 0)"
-
-echo
-echo
 echo
 echo "$(tput setaf 2)Installing java8...$(tput sgr 0)"
 
@@ -24,6 +18,16 @@ sleep 2
 sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
 clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
 sleep 2
 
@@ -34,12 +38,32 @@ sudo mkdir /home/pi/limelight
 sudo mkdir /home/pi/RetroPie/roms/limelight
 
 clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
 sleep 2
 
 sudo cp /home/pi/TriPi-Updater/Configure\ Limelight.sh /home/pi/RetroPie/roms/limelight/ 
 
-clear 
+clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo "$(tput setaf 2)Downloading Limelight...$(tput sgr 0)"
 sleep 2
 
@@ -50,6 +74,16 @@ sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.
 sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
 
 clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo "$(tput setaf 2)Installing limelight menu to Emulation Station...$(tput sgr 0)"
 sleep 2
 
@@ -73,6 +107,16 @@ sudo cp limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/ar
 sudo cp limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
 
 clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
 sleep 2
 
@@ -97,6 +141,16 @@ sudo chmod +x /home/pi/RetroPie/roms/limelight/limelight1080p60fps.sh
 sudo chmod +x /home/pi/RetroPie/roms/limelight/Configure\ Limelight.sh
 
 clear
+echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
+echo "$(tput setaf 2)                        _______     _  _____   _"
+echo "                       |__   __|   (_)|  __ \ (_)  "
+echo "                          | | _ __  _ | |__) | _   "
+echo "                          | || '__|| ||  ___/ | |  "
+echo "                          | || |   | || |     | |  "
+echo "                          |_||_|   |_||_|     |_|  "
+echo
+echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
+echo
 echo -e "\n$(tput setaf 2)Done!\n" 
 
 echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
