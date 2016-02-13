@@ -51,8 +51,8 @@ sudo sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Lime
 
 sudo rm -rf /etc/emulationstation/themes/simple/limelight
 sudo rm -rf /etc/emulationstation/themes/simple/limelight/art/
-sudo mkdir /etc/emulationstation/themes/simple/limelight
-sudo mkdir /etc/emulationstation/themes/simple/limelight/art/
+sudo mkdir /etc/emulationstation/themes/simple-dark/limelight
+sudo mkdir /etc/emulationstation/themes/simple-dark/limelight/art/
 
 cd /home/pi/limelight
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/theme.xml
@@ -60,8 +60,8 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
 
-sudo cp theme.xml /etc/emulationstation/themes/simple/limelight
-sudo cp {limelight.png,limelight_art.png,limelight_art_blur.png} /etc/emulationstation/themes/simiple/limelight/art
+sudo cp theme.xml /etc/emulationstation/themes/simple-dark/limelight
+sudo cp {limelight.png,limelight_art.png,limelight_art_blur.png} /etc/emulationstation/themes/simiple-dark/limelight/art
 
 echo "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
 
