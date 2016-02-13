@@ -26,7 +26,7 @@ mkdir /home/pi/RetroPie/roms/limelight
 echo
 echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
 
-cp limelightconfig.sh /home/pi/RetroPie/roms/limelight/ 
+cp Configure\ Limelight.sh /home/pi/RetroPie/roms/limelight/ 
 
 echo
 echo "$(tput setaf 2)Downloading Limelight...$(tput sgr 0)"
@@ -102,7 +102,7 @@ echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip
 chmod +x limelight720p60fps.sh
 chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
-chmod +x limelightconfig.sh
+chmod +x Configure\ Limelight.sh
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
