@@ -62,8 +62,8 @@ cp es_systems.cfg /etc/emulationstation
 cp retroarch.cfg /opt/retropie/configs/all/
 cp smb.conf /etc/samba/
 cp Enable\ Auto-Update.sh /home/pi/RetroPie/roms/TriPi
-cp Disable\ Auto-Update.sh /home/pi/RetroPie/roms/TriPi
-cp Install\ Limelight.sh /home/pi/RetroPie/roms/TriPi
+#cp Disable\ Auto-Update.sh /home/pi/RetroPie/roms/TriPi
+#cp Install\ Limelight.sh /home/pi/RetroPie/roms/TriPi
 
 echo -e "\n$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
 sleep .2
