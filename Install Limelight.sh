@@ -46,11 +46,11 @@ sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.
 
 clear
 
-read -p "Installing limelight menu to Emulation Station, press anykey to continue `echo $'\n> '`" -n1 -s
+echo "$(tput setaf 2)Installing limelight menu to Emulation Station...(tput sgr 0)"
 sudo sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 
-sudo rm -rf /etc/emulationstation/themes/simple/limelight
-sudo rm -rf /etc/emulationstation/themes/simple/limelight/art/
+sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight
+sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight/art/
 sudo mkdir /etc/emulationstation/themes/simple-dark/limelight
 sudo mkdir /etc/emulationstation/themes/simple-dark/limelight/art/
 
@@ -61,11 +61,13 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
 
 sudo cp theme.xml /etc/emulationstation/themes/simple-dark/limelight
-sudo cp {limelight.png,limelight_art.png,limelight_art_blur.png} /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp limelight.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
 
 echo "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
 
-cd /home/pi/RetroPie/roms/limelight
+cd /home/pi/
 
 sudo echo "#!/bin/bash" > limelight720p60fps.sh
 sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
@@ -76,10 +78,14 @@ sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps
 sudo echo "#!/bin/bash" > limelight1080p60fps.sh
 sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
-sudo chmod +x limelight720p60fps.sh
-sudo chmod +x limelight1080p30fps.sh
-sudo chmod +x limelight1080p60fps.sh
-sudo chmod +x Configure\ Limelight.sh
+sudo mv limelight720p60fps.sh /home/pi/RetroPie/roms/
+sudo mv limelight1080p30fps.sh /home/pi/RetroPie/roms/
+sudo mv limelight1080p60fps.sh /home/pi/RetroPie/roms/
+
+sudo chmod +x /home/pi/RetroPie/roms/limelight720p60fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight1080p30fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/limelight1080p60fps.sh
+sudo chmod +x /home/pi/RetroPie/roms/Configure\ Limelight.sh
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
