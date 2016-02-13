@@ -14,6 +14,11 @@ echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00
 
 
 echo "$(tput setaf 2)Installing java8...$(tput sgr 0)"
+echo 
+echo
+echo
+sleep 5
+
 sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
 echo
@@ -25,16 +30,16 @@ sudo mkdir /home/pi/RetroPie/roms/limelight
 echo
 echo "$(tput setaf 2)Installing Limelight config file to TriPi Menu....$(tput sgr 0)"
 
-cp Configure\ Limelight.sh /home/pi/RetroPie/roms/limelight/ 
+cp /home/pi/TriPi-Updater/Configure\ Limelight.sh /home/pi/RetroPie/roms/limelight/ 
 
 echo
 echo "$(tput setaf 2)Downloading Limelight...$(tput sgr 0)"
 
 cd /home/pi/limelight
 
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/libopus.so
+sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/libopus.so
 
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
+sudo wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
 
 clear
 
@@ -51,22 +56,22 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 
 cd /home/pi/RetroPie/roms/limelight
 
-read -p "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
+echo "$(tput setaf 2)Installing additional Limelight scripts...$(tput sgr 0)"
 
 
-echo "#!/bin/bash" > limelight720p60fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
+sudo echo "#!/bin/bash" > limelight720p60fps.sh
+sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
 
-echo "#!/bin/bash" > limelight1080p30fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
+sudo echo "#!/bin/bash" > limelight1080p30fps.sh
+sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
 
-echo "#!/bin/bash" > limelight1080p60fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
+sudo echo "#!/bin/bash" > limelight1080p60fps.sh
+sudo echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
-chmod +x limelight720p60fps.sh
-chmod +x limelight1080p30fps.sh
-chmod +x limelight1080p60fps.sh
-chmod +x Configure\ Limelight.sh
+sudo chmod +x limelight720p60fps.sh
+sudo chmod +x limelight1080p30fps.sh
+sudo chmod +x limelight1080p60fps.sh
+sudo chmod +x Configure\ Limelight.sh
 
 echo -e "\n$(tput setaf 2)Done!\n" 
 
@@ -82,4 +87,4 @@ while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
   fi
 done
 
-reboot
+sudo reboot
