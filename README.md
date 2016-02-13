@@ -11,18 +11,11 @@ This can include changelog info for that specific update, new features, and/or w
 
 **Changes in this release**
 
--Update 2/3/2016
+-Updated moonlight script in hopes that the directory issues are resolved (FINGERS CROSSED!)
 
--Special thanks to Jay Schewerberg for the help with this update!
+-For those interested in using Limelight instead, there will be an install script for Limelight in your TriPi menu!
 
--Added Auto-Updater! In the TriPi menu, you will now see options to enable or disable auto-updates for TriPi.
-
--If you choose to enable it, you are agreeing to let TriPi update every night at midnight via a daily cronjob. This means that certain files you may have customized such as retroarch.cfg and smb.conf will be replaced by the ones provided in the TriPi update, even if they weren't changed since the last update.
-
--If you don't want that to happen, then don't enable it, (or if you change your mind, disable it) and use the manual update option When an update comes out that you are interested in taking. Both update methods function exactly the same other than the difference of being done manually or automatically.
-
-
--If you already have a TriPi-based setup (RetroPie + Kodi 15.1 installed on top of Raspbian Wheezy), or used previous versions of TriPi that were on my github, you can clone this repo and run update.sh (as sudo, of course). From then on, you will have a "TriPi-Updater" option under "TriPi" in EmulationStation.
+-The auto-update feature still isn't working properly yet, but it is not causing any issues. The files are still being added, but for now just leave them and stick to manual updates. It will be a little bit before I can tackle this issue.
 
 -You may run this updater anyways if you modified TriPi-related files and want to attempt to restore them.
 
