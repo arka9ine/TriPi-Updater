@@ -61,7 +61,6 @@ sudo mkdir /etc/emulationstation/themes/simple-dark/limelight
 sudo mkdir /etc/emulationstation/themes/simple-dark/limelight/art/
 
 cd /home/pi/limelight
-sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/theme.xml
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
