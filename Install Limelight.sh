@@ -101,6 +101,8 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 
 cd /home/pi/limelight
 
+sudo rm /etc/emulationstation/themes/simple-dark/limelight/theme.xml
+sleep 1
 sudo cp /home/pi/TriPi-Updater/theme.xml /etc/emulationstation/themes/simple-dark/limelight
 sudo cp limelight.png /etc/emulationstation/themes/simiple-dark/limelight/art
 sudo cp limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/art
