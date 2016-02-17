@@ -125,6 +125,8 @@ chmod +x {/home/pi/RetroPie/roms/TriPi/Install\ Limelight.sh,/home/pi/killmc.sh,
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
 chmod +x /etc/emulationstation/es_systems.cfg
+sudo chown -R pi:pi /home/pi/RetroPie/roms/
+
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
