@@ -60,7 +60,7 @@ sleep 2
 rm {/boot/config.txt,/etc/inittab,/etc/profile.d/emu.sh,/etc/rc.local,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/ports/wireless\ controller\ hotfix.sh,/home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh,/home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh,/homt/pi/RetroPie/roms/ports/TriPi-Updater.sh,/home/pi/.bashrc,/etc/splashscreen.list,/etc/init.d/asplashscreen,}
 rm -rf /opt/retropie/supplementary/splashscreen/TriPi
 rm -rf /home/pi/RetroPie/roms/TriPi
-rm -rf /etc/emulationstation/themes/simple-dark/TriPi
+#rm -rf /etc/emulationstation/themes/simple-dark/TriPi
 rm /etc/emulationstation/es_systems.cfg
 rm /home/pi/RetroPie/roms/TriPi/Retroarch\ LCD\ Fix.sh
 rm /home/pi/RetroPie/roms/TriPi/wireless\ controller\ hotfix.sh
@@ -68,7 +68,7 @@ rm /opt/retropie/configs/all/retroarch.cfg
 #rm /etc/samba/smb.conf
 
 mkdir /home/pi/RetroPie/roms/TriPi
-mkdir /etc/emulationstation/themes/simple-dark/TriPi
+#mkdir /etc/emulationstation/themes/simple-dark/TriPi
 
 cp config.txt /boot/
 cp inittab /etc/
@@ -81,8 +81,8 @@ cp asplashscreen /etc/init.d/
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 cp killmc.sh /home/pi/
 cp Manual\ Update.sh /home/pi/RetroPie/roms/TriPi
-cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
-cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
+#cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
+#cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
 cp es_systems.cfg /etc/emulationstation
 cp retroarch.cfg /opt/retropie/configs/all/
 #cp smb.conf /etc/samba/
