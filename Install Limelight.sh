@@ -101,9 +101,9 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 sleep 1
 
 sudo cp /home/pi/TriPi-Updater/theme.xml /etc/emulationstation/themes/simple-dark/limelight
-sudo cp /home/pi/limelight/limelight.png /etc/emulationstation/themes/simiple-dark/limelight/art
-sudo cp /home/pi/limelight/limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/art
-sudo cp /home/pi/limelight/limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight.png /etc/emulationstation/themes/simple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight_art.png /etc/emulationstation/themes/simple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight_art_blur.png /etc/emulationstation/themes/simple-dark/limelight/art
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
