@@ -28,14 +28,18 @@ echo "                          |_||_|   |_||_|     |_|  "
 echo
 echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000\n"
 echo
-echo "$(tput setaf 2)Creating folder for install...$(tput sgr 0)"
+echo "$(tput setaf 2)Making room for everything...$(tput sgr 0)"
 sleep 2
 
 sudo rm -rf /home/pi/limelight
 sudo rm -rf /home/pi/RetroPie/roms/limelight
-sleep 1
+sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight
+sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight/art/
+sudo mkdir /etc/emulationstation/themes/simple-dark/limelight
+sudo mkdir /etc/emulationstation/themes/simple-dark/limelight/art/
 sudo mkdir /home/pi/limelight
 sudo mkdir /home/pi/RetroPie/roms/limelight
+
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
@@ -89,24 +93,17 @@ sleep 2
 
 sudo sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 
-sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight
-sudo rm -rf /etc/emulationstation/themes/simple-dark/limelight/art/
-sudo mkdir /etc/emulationstation/themes/simple-dark/limelight
-sudo mkdir /etc/emulationstation/themes/simple-dark/limelight/art/
-
 cd /home/pi/limelight
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
 
-cd /home/pi/limelight
-
-sudo rm /etc/emulationstation/themes/simple-dark/limelight/theme.xml
 sleep 1
+
 sudo cp /home/pi/TriPi-Updater/theme.xml /etc/emulationstation/themes/simple-dark/limelight
-sudo cp limelight.png /etc/emulationstation/themes/simiple-dark/limelight/art
-sudo cp limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/art
-sudo cp limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight_art.png /etc/emulationstation/themes/simiple-dark/limelight/art
+sudo cp /home/pi/limelight/limelight_art_blur.png /etc/emulationstation/themes/simiple-dark/limelight/art
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
