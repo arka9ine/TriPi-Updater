@@ -95,7 +95,7 @@ cd /home/pi/TriPi-Updater/Limelight/
 
 cp Install\ Limelight.sh /home/pi/RetroPie/roms/TriPi
 
-sleep 
+sleep 5
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
@@ -138,6 +138,7 @@ echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput
 
 
 SECONDS_TILL_REBOOT=10
+
 while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
   sleep 1
   SECONDS_TILL_REBOOT=$[${SECONDS_TILL_REBOOT} -1]
@@ -145,4 +146,5 @@ while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
     echo "${SECONDS_TILL_REBOOT} seconds until reboot"
   fi
 done
+
 sudo reboot
