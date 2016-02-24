@@ -11,13 +11,11 @@ This can include changelog info for that specific update, new features, and/or w
 
 **Changes in this release**
 
-Update 2/12/16
+Update 2/23/16 - Version 4.6!
 
--Updated moonlight script in hopes that the directory issues are resolved (FINGERS CROSSED!)
+-Lots of code and directory cleanup for better organization.
 
--For those interested in using Limelight instead, there will be an install script for Limelight in your TriPi menu!
-
--The auto-update feature still isn't working properly yet, but it is not causing any issues. The files are still being added, but for now just leave them and stick to manual updates. It will be a little bit before I can tackle this issue.
+-Updated boot splashscreen.
 
 -You may run this updater anyways if you modified TriPi-related files and want to attempt to restore them.
 
