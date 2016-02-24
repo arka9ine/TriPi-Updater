@@ -29,7 +29,7 @@ Check back later for future releases.
 
 **Release type**
 
-Feature addition - Stable -
+Code cleanup
 #
 
 #
