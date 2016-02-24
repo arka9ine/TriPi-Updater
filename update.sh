@@ -113,10 +113,18 @@ echo  "$(tput setaf 2)Setting permissions for new files...$(tput sgr 0)"
 sleep 2
 
 
-chmod +x {/home/pi/RetroPie/roms/TriPi/Install\ Limelight.sh,/home/pi/killmc.sh,/home/pi/RetroPie/roms/ports/kodi.sh,/home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh,/home/pi/RetroPie/roms/TriPi/Manual\ Update.sh,/etc/profile.d/emu.sh,/etc/rc.local}
+chmod +x /home/pi/RetroPie/roms/TriPi/Install\ Limelight.sh
+chmod +x /home/pi/killmc.sh
+chmod +x /home/pi/RetroPie/roms/ports/kodi.sh
+chmod +x /home/pi/RetroPie/roms/ports/Minecraft\ TriPi\ Port.sh
+chmod +x /home/pi/RetroPie/roms/TriPi/Manual\ Update.sh
+chmod +x /etc/profile.d/emu.sh
+chmod +x /etc/rc.local
+chmod +x /etc/emulationstation/es_systems.cfg
+
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
-chmod +x /etc/emulationstation/es_systems.cfg
+
 sudo chown -R pi:pi /home/pi/RetroPie/roms/
 
 sleep 5
