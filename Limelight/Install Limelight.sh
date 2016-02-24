@@ -152,16 +152,6 @@ echo -e "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00
 echo
 echo -e "\n$(tput setaf 2)Done!\n" 
 
-echo "I will reboot your Raspberry Pi in 10 seconds. ENJOY! -Pancakeykakes$(tput sgr 0)"
-
-SECONDS_TILL_REBOOT=10
-
-while [[ ${SECONDS_TILL_REBOOT} -gt 0 ]]; do
-  sleep 1
-  SECONDS_TILL_REBOOT=$[${SECONDS_TILL_REBOOT} -1]
-  if [[ $((${SECONDS_TILL_REBOOT} % 5)) -eq 0 ]]; then
-    echo "${SECONDS_TILL_REBOOT} seconds until reboot"
-  fi
-done
+echo "I will now reboot. ENJOY! -Pancakeykakes$(tput sgr 0)"
 
 sudo reboot
