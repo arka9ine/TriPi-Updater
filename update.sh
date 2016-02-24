@@ -60,10 +60,12 @@ echo
 echo  "$(tput setaf 2)Updating System...$(tput sgr 0)"
 sleep 2
 
+rm -rf /home/pi/RetroPie/roms/TriPi
 mkdir /home/pi/RetroPie/roms/TriPi
 #mkdir /etc/emulationstation/themes/simple-dark/TriPi
 
 cd /home/pi/TriPi-Updater/
+
 cp Manual\ Update.sh /home/pi/RetroPie/roms/TriPi
 cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
@@ -78,14 +80,12 @@ cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp es_systems.cfg /etc/emulationstation
 cp retroarch.cfg /opt/retropie/configs/all/
-
+cp killmc.sh /home/pi/
 
 cd /home/pi/TriPi-Updater/Ports/
 
 cp kodi.sh /home/pi/RetroPie/roms/ports
 cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
-cp killmc.sh /home/pi/
-
 cd /home/pi/TriPi-Updater/TriPi-Menu/
 
 cp theme.xml /etc/emulationstation/themes/simple-dark/TriPi
