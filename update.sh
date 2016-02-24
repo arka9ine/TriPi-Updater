@@ -57,53 +57,45 @@ echo
 echo  "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
 echo
 echo
-echo  "$(tput setaf 2)Removing old files and creating required directories...$(tput sgr 0)"
+echo  "$(tput setaf 2)Updating System...$(tput sgr 0)"
 sleep 2
 
 mkdir /home/pi/RetroPie/roms/TriPi
 #mkdir /etc/emulationstation/themes/simple-dark/TriPi
 
-cp /home/pi/TriPi-Updater/System/config.txt /boot/
-cp /home/pi/TriPi-Updater/System/inittab /etc/
-cp /home/pi/TriPi-Updater/System/rc.local /etc/
-cp /home/pi/TriPi-Updater/System/emu.sh /etc/profile.d/
-cp /home/pi/TriPi-Updater/System/.bashrc /home/pi
-
-cp /home/pi/TiPi-Updater/System/splashscreen.list /etc/
-cp /home/pi/TiPi-Updater/System/asplashscreen /etc/init.d/
-cp -r /home/pi/TiPi-Updater/System/TriPi /opt/retropie/supplementary/splashscreen/
-cp /home/pi/TriPi-Updater/System/.bashrc 
-cp /home/pi/TriPi-Updater/System/es_systems.cfg /etc/emulationstation
-cp /home/pi/TriPi-Updater/System/retroarch.cfg /opt/retropie/configs/all/
-
-
-
-cp /home/pi/TriPi-Updater/Ports/kodi.sh /home/pi/RetroPie/roms/ports
-cp /home/pi/TriPi-Updater/Ports/killmc.sh /home/pi/
-
+cd /home/pi/TriPi-Updater/
 cp Manual\ Update.sh /home/pi/RetroPie/roms/TriPi
+cp -r TriPi /opt/retropie/supplementary/splashscreen/
 
-cp /home/pi/TriPi-Updater/TriPi-Menu/theme.xml /etc/emulationstation/themes/simple-dark/TriPi
-cp -r /home/pi/TriPi-Updater/TriPi-Menu/art /etc/emulationstation/themes/simple-dark/TriPi
+cd /home/pi/TriPi-Updater/System
 
-cp /home/pi/TriPi-Updater/Limelight/Install\ Limelight.sh /home/pi/RetroPie/roms/TriPi
+cp config.txt /boot/
+cp inittab /etc/
+cp rc.local /etc/
+cp emu.sh /etc/profile.d/
+cp .bashrc /home/pi
+cp splashscreen.list /etc/
+cp asplashscreen /etc/init.d/
+cp es_systems.cfg /etc/emulationstation
+cp retroarch.cfg /opt/retropie/configs/all/
 
-clear
-echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
-echo "$(tput setaf 2)                        _______     _  _____   _"
-echo "                       |__   __|   (_)|  __ \\ (_)  "
-echo "                          | | _ __  _ | |__) | _   "
-echo "                          | || '__|| ||  ___/ | |  "
-echo "                          | || |   | || |     | |  "
-echo "                          |_||_|   |_||_|     |_|  "
-echo
-echo  "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
-echo
-echo
-echo  "$(tput setaf 2)Setting Controller Keybinds for Minecraft-Pi... $(tput sgr 0)"
-sleep 2
 
-cp /home/pi/TriPi-Updater/Ports/Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
+cd /home/pi/TriPi-Updater/Ports/
+
+cp kodi.sh /home/pi/RetroPie/roms/ports
+cp Minecraft\ TriPi\ Port.sh /home/pi/RetroPie/roms/ports
+cp killmc.sh /home/pi/
+
+cd /home/pi/TriPi-Updater/TriPi-Menu/
+
+cp theme.xml /etc/emulationstation/themes/simple-dark/TriPi
+cp -r art /etc/emulationstation/themes/simple-dark/TriPi
+
+cd /home/pi/TriPi-Updater/Limelight/
+
+cp Install\ Limelight.sh /home/pi/RetroPie/roms/TriPi
+
+sleep 
 
 clear
 echo "$(tput setaf 1)01010100 01110010 01101001 01010000 01101001 00110010 00101110 00110000"
