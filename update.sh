@@ -79,7 +79,7 @@ cp .bashrc /home/pi
 cp splashscreen.list /etc/
 cp asplashscreen /etc/init.d/
 cp es_systems.cfg /etc/emulationstation
-cp retroarch.cfg /opt/retropie/configs/all/
+#cp retroarch.cfg /opt/retropie/configs/all/
 cp killmc.sh /home/pi/
 
 cd /home/pi/TriPi-Updater/Ports/
@@ -121,6 +121,7 @@ chmod +x /home/pi/RetroPie/roms/TriPi/Manual\ Update.sh
 chmod +x /etc/profile.d/emu.sh
 chmod +x /etc/rc.local
 chmod +x /etc/emulationstation/es_systems.cfg
+chmod +x /opt/retropie/configs/all/retroarch.cfg
 
 chmod a+x /etc/init.d/asplashscreen
 insserv /etc/init.d/asplashscreen
