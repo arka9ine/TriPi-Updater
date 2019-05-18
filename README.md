@@ -10,6 +10,7 @@ I THANK ALL OF YOU WHO MADE USE OF AND ENJOYED THIS PROJECT, AS WELL AS THE DEVE
 **TriPi Updater**
 
 
-Visit https://tripi.junaos.com for information on, and to download the bootable image that this updater is for. Burn, Insert, Go!
+~~Visit https://tripi.junaos.com for information on, and to download the bootable image that this updater is for. Burn, Insert, Go!~~
+[Website no longer available]
 
-Enjoy!
+Thanks!
